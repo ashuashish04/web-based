@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Palace Hotel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Royal Palace Hotel - Luxury stay in Nainital with premium amenities and royal experience"
+    />
+  </head>
+  <body>
+    <!-- ✅ SABSE PEHLE LOADER -->
+    <div id="loader">
+      <h1>Royal Palace</h1>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+      <div class="logo">Royal Palace</div>
+
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="navToggle">&#9776;</button>
+        <!-- hamburger icon -->
+      </nav>
+
+      <button id="modeToggle">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="slider">
+        <div class="slide active">
+          <img
+            src="./images/slide1.webp"
+            alt="Luxury hotel exterior view in Nainital"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./images/slide2 (1).jpg"
+            alt="Royal Palace Hotel luxury interior lobby"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./images/slide3 (1).jpg"
+            alt="Luxury hotel bedroom with elegant design"
+          />
+        </div>
+      </div>
+
+      <!-- TEXT AB SLIDE KE BAHAR -->
+      <div class="banner-content">
+        <h4 id="heroSub">Welcome to Royal Elegance</h4>
+        <h1 id="heroTitle">Experience Royal Luxury</h1>
+        <p id="heroDesc">Where comfort meets timeless grandeur</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+    </section>
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+      <div class="section-header">
+        <h2>Our Rooms</h2>
+        <p>Experience luxury and comfort in every stay</p>
+      </div>
+      <div class="room-carousel-wrapper">
+        <button class="scroll-btn left-btn">&#10094;</button>
+        <div class="room-carousel">
+          <div class="room-card">
+            <img
+              src="./images/room11.webp"
+              alt="Deluxe room with lake view at Royal Palace Hotel"
+            />
+            <h3>Deluxe Room</h3>
+            <p>Luxury room with lake view.</p>
+          </div>
+
+          <div class="room-card">
+            <img
+              src="./images/room2.jpg"
+              alt="Royal suite luxury bedroom interior"
+            />
+            <h3>Royal Suite</h3>
+            <p>Premium royal experience.</p>
+          </div>
+
+          <div class="room-card">
+            <img
+              src="./images/room12.webp"
+              alt="Classic palace style hotel room interior"
+            />
+            <h3>Palace Room</h3>
+            <p>Classic palace interior design.</p>
+          </div>
+
+          <div class="room-card">
+            <img
+              src="./images/room5.webp"
+              alt="Presidential suite luxury bedroom"
+            />
+            <h3>Presidential Suite</h3>
+            <p>Top luxury experience.</p>
+          </div>
+
+          <div class="room-card">
+            <img
+              src="./images/room6.webp"
+              alt="Imperial suite with private lounge and city view"
+            />
+            <h3>Imperial Suite</h3>
+            <p>Elegant luxury with private lounge & city view.</p>
+          </div>
+        </div>
+        <button class="scroll-btn right-btn">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <div class="gallery-header">
+        <h2>Hotel Gallery</h2>
+        <p>
+          Explore our luxurious rooms, exquisite amenities, and stunning views
+        </p>
+        <div class="underline"></div>
+      </div>
+      <div class="gallery-container">
+        <img
+          src="./images/g1.webp"
+          alt="Luxury hotel bedroom interior design"
+        />
+        <img
+          src="./images/g11.webp"
+          alt="Royal Palace Hotel luxury living area"
+        />
+        <img
+          src="./images/g3.webp"
+          alt="Luxury hotel room with elegant lighting"
+        />
+        <img src="./images/g4.webp" alt="Modern luxury hotel interior design" />
+      </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="amenities" id="amenities">
+      <div class="amenities-header">
+        <h2>Our Amenities</h2>
+        <p>Experience the ultimate comfort and luxury at Royal Palace Hotel</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <img src="./images/pool.png" alt="Swimming Pool" />
+          <h3>Swimming Pool</h3>
+          <p>Relax in our infinity pool with breathtaking views.</p>
+        </div>
+
+        <div class="amenity-card">
+          <img src="./images/spa.png" alt="Spa & Wellness" />
+          <h3>Spa & Wellness</h3>
+          <p>Rejuvenate your mind and body with our premium treatments.</p>
+        </div>
+
+        <div class="amenity-card">
+          <img src="./images/dining.png" alt="Fine Dining" />
+          <h3>Fine Dining</h3>
+          <p>Savor gourmet cuisines prepared by world-class chefs.</p>
+        </div>
+
+        <div class="amenity-card">
+          <img src="./images/wifi.png" alt="Free WiFi" />
+          <h3>Free WiFi</h3>
+          <p>Stay connected with fast and reliable internet anywhere.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury Offer Popup -->
+    <div id="offerPopup" class="lux-popup">
+      <div class="lux-popup-content">
+        <button id="closePopup" class="lux-close">&times;</button>
+
+        <img src="./images/room11.webp" class="offer-room-img" alt="Luxury deluxe room special offer">
+        <div class="discount-badge">15% OFF</div>
+
+        <div class="lux-offer-list">
+          <p>✦ Two Way Airport Transfer</p>
+          <p>✦ Complimentary Meeting Room*</p>
+          <p>✦ Buffet Breakfast</p>
+          <p>✦ Access to The Club Lounge</p>
+        </div>
+
+        <button class="lux-btn" id="offerBookBtn">Book Direct Now</button>
+
+        <small class="terms">*Terms & conditions apply</small>
+      </div>
+    </div>
+
+    <!-- map -->
+    <section class="location" id="location">
+      <h2>📍 Our Location</h2>
+      <p>Located in the beautiful hills of Nainital, Uttarakhand.</p>
+
+      <iframe
+        src="https://www.google.com/maps?q=Nainital,Uttarakhand&output=embed"
+        width="100%"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+
+      <p><strong>Address:</strong> Nainital, Uttarakhand, India</p>
+    </section>
+
+    <!--testimonials  -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-header">
+        <h2>Guest Experiences</h2>
+        <p>See what visitors loved about Royal Palace Hotel</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>
+            "A beautiful stay with comfortable rooms, stunning views of Naini
+            Lake, and excellent service. Truly a memorable experience."
+          </p>
+          <h4>— Arjun Sharma, Delhi</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            "Everything from check-in to dining was smooth and pleasant. Ideal
+            for a relaxing getaway in Nainital."
+          </p>
+          <h4>— Priya Mehta, Mumbai</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            "Impeccable hospitality and peaceful ambiance. Definitely a top
+            choice for travelers in Uttarakhand."
+          </p>
+          <h4>— Rohan Verma, Bangalore</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="faq" id="faq">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to common queries about your stay</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <h4>What are the check-in and check-out times?</h4>
+          <p>
+            Check-in: 2:00 PM | Check-out: 11:00 AM. Early or late timings
+            subject to availability.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Is breakfast included?</h4>
+          <p>Yes, all bookings include a complimentary buffet breakfast.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Do you offer airport or railway station transfers?</h4>
+          <p>
+            Yes, transfers can be arranged on request. Please inform us in
+            advance.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>What is the cancellation policy?</h4>
+          <p>
+            Free cancellation up to 48 hours before check-in. Please check
+            detailed terms on booking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <h2>About Royal Palace Hotel</h2>
+        <div class="about-columns">
+          <!-- Column 1: Our Story -->
+          <div class="about-column">
+            <h3>Our Journey</h3>
+            <ul>
+              <li>From Our Heart to Yours</li>
+              <li>Awards & Recognition</li>
+              <li>Join Our Team</li>
+              <li>Contact Royal Palace</li>
+              <li>Royal Training & Development</li>
+              <li>Community & Sustainability</li>
+              <li>Government Initiatives</li>
+              <li>Explore More</li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Services & Experiences -->
+          <div class="about-column">
+            <h3>Exclusive Experiences</h3>
+            <ul>
+              <li>Best Price Promise</li>
+              <li>Royal Membership</li>
+              <li>Gift Packages</li>
+              <li>Luxury Events & Competitions</li>
+              <li>Royal Dining Experiences</li>
+              <li>Private Suites & Villas</li>
+              <li>Private Aviation Services</li>
+              <li>Guest Loyalty Programs</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: News & Subscription -->
+          <div class="about-column">
+            <h3>Updates & Newsletter</h3>
+            <ul>
+              <li>Latest News</li>
+              <li>Press Releases</li>
+              <li>Upcoming Hotels</li>
+              <li>Media Coverage</li>
+            </ul>
+
+            <div class="newsletter">
+              <p>
+                Subscribe to get stories, events, and inspirations from Royal
+                Palace Hotel straight to your inbox.
+              </p>
+              <input type="email" placeholder="Enter your e-mail address" />
+              <button>Subscribe</button>
+            </div>
+
+            <button class="manage-reservations">Manage Your Booking</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Royal Palace Hotel | Designed by You</p>
+    </footer>
+
+    <!-- Book Now Popup -->
+    <div id="bookNowPopup" class="lux-popup">
+      <div class="lux-popup-content">
+        <button class="lux-close" id="closeBookNow">&times;</button>
+        <h2>Book Your <span>Stay</span></h2>
+        <form id="bookNowForm">
+          <input type="text" id="bookName" placeholder="Your Name" required />
+          <input
+            type="tel"
+            id="bookPhone"
+            placeholder="Phone Number"
+            required
+          />
+          <input type="email" id="bookEmail" placeholder="Email" required />
+          <div class="date-row">
+            <label
+              >Check-in:
+              <input type="date" id="checkIn" required />
+            </label>
+            <label
+              >Check-out:
+              <input type="date" id="checkOut" required />
+            </label>
+          </div>
+          <select id="adults" required>
+            <option value="">Select Adults</option>
+            <option value="1">1 Adult</option>
+            <option value="2">2 Adults</option>
+            <option value="3">3 Adults</option>
+            <option value="4">4 Adults</option>
+          </select>
+
+          <select id="roomType" required>
+            <option value="">Select Room Type</option>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+          </select>
+
+          <textarea id="message" placeholder="Your Message"></textarea>
+
+          <button type="submit" class="lux-btn" id="">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

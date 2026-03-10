@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel - Royal Palace</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table{
+  border-collapse: collapse;
+  background:white;
+}
+
+th{
+  background:gold;
+}
+
+button{
+  padding:6px 12px;
+  background:red;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;margin:20px;">Admin Panel - Bookings</h2>
+
+<table border="1" width="90%" align="center" cellpadding="10">
+  <thead>
+    <tr>
+      <th>Booking ID</th>
+      <th>Name</th>
+      <th>Room</th>
+      <th>Check In</th>
+      <th>Check Out</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="bookingTable"></tbody>
+</table>
+
+<script>
+let bookings = JSON.parse(localStorage.getItem("hotelBookings")) || [];
+let table = document.getElementById("bookingTable");
+
+bookings.forEach(b => {
+  table.innerHTML += `
+    <tr>
+      <td>${b.bookingId}</td>
+      <td>${b.name}</td>
+      <td>${b.roomType}</td>
+      <td>${b.checkIn}</td>
+      <td>${b.checkOut}</td>
+      <td>
+        <button onclick="deleteBooking('${b.bookingId}')">
+          Delete
+        </button>
+      </td>
+    </tr>
+  `;
+});
+
+
+// Delete booking by ID
+function deleteBooking(id) {
+
+  let bookings = JSON.parse(localStorage.getItem("hotelBookings")) || [];
+
+  bookings = bookings.filter(b => b.bookingId !== id);
+
+  localStorage.setItem("hotelBookings", JSON.stringify(bookings));
+
+  location.reload();
+
+}
+</script>
+
+</body>
+</html>
