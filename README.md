@@ -1,49 +1,59 @@
-Hotel Website
-Description
+# 🏨 Hotel Booking Web Application
 
-This is a web-based hotel website that allows users to explore available rooms, view amenities, and make reservations. The website is designed with a clean and user-friendly interface to provide a seamless experience for hotel guests.
+## 📌 Description
+This is a full-stack hotel booking web application where users can register, login, and book hotel rooms. Each user has a personal dashboard to manage bookings.
 
-Features
+---
 
-Browse available rooms with details and images
+## 🚀 Features
+- User Registration & Login
+- JWT Authentication
+- Room Booking System
+- User Dashboard
+- View & Cancel Bookings
+- Invoice Download (Text format)
 
-View hotel facilities and services
+---
 
-Check room availability and pricing
+## 🛠 Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express.js
+- Database: MongoDB Atlas
+- Authentication: JWT
 
-Responsive design for desktop and mobile
+---
 
-Contact form for inquiries and feedback
+## 📂 Project Structure
+- /models → Database models
+- /routes → API routes
+- /middleware → Auth middleware
+- server.js → Main backend server
 
-Technologies Used
+---
 
-HTML5 & CSS3 – Structure and styling
+## 🔐 Authentication Flow
+- User logs in
+- Server generates JWT token
+- Token stored in localStorage
+- Token sent with every request
+- Backend verifies user
 
-JavaScript – Interactive features and form validations
+---
 
-Bootstrap – Responsive layout and design components
+## 📊 Database
+MongoDB Atlas is used to store:
+- Users
+- Bookings
 
-Font Awesome – Icons for visual enhancement
+---
 
-Installation / Running Locally
+## ▶️ How to Run
+1. Clone repository
+2. Run `npm install`
+3. Add `.env` file (MONGO_URI, JWT_SECRET)
+4. Run `node server.js`
 
-Clone the repository:
+---
 
-git clone <repository-link>
-
-Open index.html in your web browser.
-
-Explore the website features.
-
-Folder Structure
-hotel-website/
-│
-├── css/           # Stylesheets
-├── js/            # JavaScript files
-├── images/        # Image assets
-├── index.html     # Homepage
-└── about.html     # About page
-Contribution
-
-Feel free to fork the repository, make improvements, and create a pull request. Suggestions for enhancing design, accessibility, or adding new pages are welcome.
-
+## 👨‍💻 Author
+Your Name
